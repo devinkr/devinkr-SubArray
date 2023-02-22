@@ -13,6 +13,11 @@ public class SubArray {
      * @return a sub-array of nums containing the values between start and end.
      */
     public int[] sub(int[] nums, int start, int end){
-        return null;
+        int subLength = end - start;
+        int[] subArr = new int[subLength];
+        for (int i = 0; i < subArr.length; i++) {
+            subArr[i] = nums[start + i];
+        }
+        return subArr;
     }
 }
